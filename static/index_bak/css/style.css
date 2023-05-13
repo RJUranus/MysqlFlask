@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,400,500,700,900');
+
+body {
+    background: url('../images/rg-bg.jpg') fixed;
+    background-size: cover;
+}
+
+/* ------------
+   BOX-SIZING
+   ------------ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* -------
+   RESET
+   ------- */
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  min-width: 0;
+  border: 0;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+
+.registration-main{
+	margin: 30px 0px;
+}
+*[role="form"] {
+    max-width: 660px;
+    padding: 15px 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+*[role="form"] h2 { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+	margin-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+*[role="form"] h2 i{
+	color: #2c6ed5;
+}
+.registration-form .form-group .form-control{
+	position: relative;
+	margin-bottom: 0px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	padding: 9px 15px;
+	outline: none;	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+	font-size: 14px;
+	font-family: inherit;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.5);
+}
+.registration-form .form-group label{
+	text-align: center;
+}
+.registration-form .form-group label i{
+	font-size: 28px;
+	color: #2c6ed5;
+}
+.registration-form .form-group .form-control:focus{
+	border-bottom: 2px solid #2c6ed5;
+}
+.form-control:focus{
+	background-color: transparent;
+	border: none;	
+}
+
+.select--no-search .select2-search {
+    display: none !important;
+}
+.rs-select2 .select2-container .select2-selection--single {
+    outline: none;
+    border: none;
+    height: 38px;
+	border-radius: 0px;
+	border-bottom: 2px solid #ccc;
+	background-color: rgba(255,255,255,0.5);
+}
+.rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+    padding-left: 15px;
+    color: #555;
+	font-size: 14px;
+}
+.rs-select2 .select2-container--default .select2-selection--single .select2-selection__arrow{
+	height: 38px;
+}
+
+.rs-select2 .select2-container {
+    width: 100% !important;
+    outline: none;
+}
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+  font-family: "Material Design Icons";
+  content: "\F140";
+  font-size: 23px;
+  color: #333333;
+  position: relative;
+  right: 4px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover{
+	background: #2c6ed5;
+}
+
+/* ------------
+   DATE PICKER
+   ------------ */
+
+.daterangepicker{
+	background: url(../images/date-bg.jpg) no-repeat center;
+	background-size: cover;
+	border: none;
+}
+.daterangepicker select.monthselect{
+	padding: 5px;
+	border-radius: 50px;
+	border: none;
+}
+.daterangepicker select.yearselect{
+	padding: 5px;
+	border-radius: 50px;
+	border: none;
+}
+.daterangepicker .calendar-table{
+	background-color: transparent;
+}
+.daterangepicker th{
+	font-weight: 600;
+}
+.daterangepicker td, .daterangepicker th{
+	color: #ffffff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+}
+.daterangepicker td.start-date.end-date{
+	border-radius: 50px;
+}
+
+.registration-form .form-group .btn-hover{
+	padding: 10px 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #2c6ed5;
+}
+
+
+
+/* --- Responsive --- */
+
+@media (max-width: 767px) {
+	[role="form"]{
+		padding: 15px 15px;
+	}
+	[role="form"] h2{
+		font-size: 24px;
+	}
+	.registration-form .form-group label.control-label{
+		display: none;
+	}
+	.registration-form .form-group .col-sm-10{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+
+
+
